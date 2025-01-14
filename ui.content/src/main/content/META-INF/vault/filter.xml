@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/multiverse" mode="merge"/>
+    <filter root="/content/multiverse" mode="merge"/>
+    <filter root="/content/dam/multiverse" mode="merge">
+        <exclude pattern="/content/dam/multiverse(/.*)?"/>
+        <include pattern="/content/dam/multiverse/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/multiverse/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/multiverse" mode="merge"/>
+</workspaceFilter>

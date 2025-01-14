@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/multiverse",
+        "create path (nt:unstructured) /content/dam/multiverse/jcr:content",
+        "set properties on /content/dam/multiverse/jcr:content\n  set cq:conf{String} to /conf/multiverse\n  set jcr:title{String} to \"Multiverse\"\nend"
+    ]
+}
