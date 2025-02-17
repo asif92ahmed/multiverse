@@ -40,6 +40,22 @@ public class HelloWorldModel {
     @Default(values="No resourceType")
     protected String resourceType;
 
+    @ValueMapValue
+    private String title;
+
+    @ValueMapValue
+    private String description;
+
+    private String sampleField;
+
+    public String getTitle(){
+        return title;
+    }
+
+    public  String getDescription(){
+        return description;
+    }
+
     @SlingObject
     private Resource currentResource;
     @SlingObject
